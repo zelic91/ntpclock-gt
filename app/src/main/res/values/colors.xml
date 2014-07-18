@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <color name="Asphalt">#3498db</color>
+    <color name="MidnightBlue">#075182</color>
+    <color name="LightGray">#ecf0f1</color>
+
+</resources>
