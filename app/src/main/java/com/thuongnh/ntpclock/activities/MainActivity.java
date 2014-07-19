@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.thuongnh.ntpclock.R;
 import com.thuongnh.ntpclock.customviews.ClockView;
 import com.thuongnh.ntpclock.helpers.DateTimeUtil;
+import com.thuongnh.ntpclock.helpers.FontUtil;
 import com.thuongnh.ntpclock.network.NetworkHandler;
 import com.thuongnh.zprogresshud.ZProgressHUD;
 
@@ -67,6 +68,11 @@ public class MainActivity extends Activity {
         tvTimeLeft = (TextView)findViewById(R.id.tv_time_left);
         btnSync = (ImageButton)findViewById(R.id.btn_sync);
         clockView = (ClockView)findViewById(R.id.clockview);
+
+        //Styling textviews
+        tvTime.setTypeface(FontUtil.getFont(this, FontUtil.LIGHT));
+        tvDate.setTypeface(FontUtil.getFont(this, FontUtil.BOLD));
+        tvTimeLeft.setTypeface(FontUtil.getFont(this, FontUtil.REGULAR));
 
         //Initial values for time variables
         mCurrentTime = System.currentTimeMillis();
